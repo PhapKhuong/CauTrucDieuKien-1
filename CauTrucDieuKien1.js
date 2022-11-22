@@ -54,3 +54,32 @@ function doSth_4()
             }
         else document.getElementById('result_4').innerText = "Hãy nhập các số là các số nguyên";
     }
+
+function doSth_5()
+    {
+        let p1 = +document.getElementById('num1_5').value;
+        let p2 = +document.getElementById('num2_5').value;
+        let p3 = +document.getElementById('num3_5').value;
+        let tb = (p1+p2+p3)/3;
+
+        if (tb >= 8.5) 
+            document.getElementById('result_5').innerText = "Điểm A";
+        else if (tb >= 7.5)
+            document.getElementById('result_5').innerText = "Điểm B";
+        else if (tb >= 6.5)
+            document.getElementById('result_5').innerText = "Điểm C";
+        else if (tb >= 4)
+            document.getElementById('result_5').innerText = "Điểm D";
+        else
+            document.getElementById('result_5').innerText = "Điểm F";
+    }
+
+function doSth_6()
+    {
+        let turnover = +document.getElementById('input_6').value;
+
+        if (turnover > 300) document.getElementById('result_6').innerText = turnover * 8/100 + ' triệu đồng';
+        else if (turnover > 200) document.getElementById('result_6').innerText = turnover * 7/100 + ' triệu đồng';
+        else if (turnover > 100) document.getElementById('result_6').innerText = turnover * 6/100 + ' triệu đồng';
+        else document.getElementById('result_6').innerText = turnover * 5/100 + ' triệu đồng';
+    }
