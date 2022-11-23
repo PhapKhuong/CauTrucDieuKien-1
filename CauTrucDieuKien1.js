@@ -2,7 +2,7 @@ function doSth_1()
     {
         let a = +document.getElementById('num1_1').value; //Khi nhập chuỗi giá trị không phải là số thì convert ra number chuỗi đó trả về NaN
         let b = +document.getElementById('num2_1').value;
-        let mod = a % b; //Bất kỳ phép tính toán nào trong đó NaN là một toán hạng thì kết quả trả về là NaN
+        let mod; //Bất kỳ phép tính toán nào trong đó NaN là một toán hạng thì kết quả trả về là NaN
         let isNum_a = !isNaN(a);
         let isNum_b = !isNaN(b);
 
@@ -10,6 +10,7 @@ function doSth_1()
             {
                 if (b!==0)
                     {
+                        mod = a % b;
                         if(mod) document.getElementById('result_1').innerText = "a không chia hết cho b";
                         else document.getElementById('result_1').innerText = "a chia hết cho b";
                     }
